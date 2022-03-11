@@ -1,23 +1,27 @@
 <h2>Aulas</h2>
-<table border="1">
-  <tr>
-    <th>Código</th>
-    <th>Nome</th>
-    <th>Dia da Semana</th>
-    <th>Horário</th>
-  </tr>
-  <tr *ngFor="let item of list; index as i">
-    <td>
-      <a [routerLink]="['/aulas', i]">{{ item.codigo }}</a>
-    </td>
-    <td>
-      <a [routerLink]="['/aulas', i]">{{ item.nome }}</a>
-    </td>
-    <!-- <td>
-      <a [routerLink]="['/aulas', i]">{{ item.text }}</a>
-    </td>
-    <td>
-      <a [routerLink]="['/aulas', i]">{{ item.text }}</a>
-    </td> -->
-  </tr>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Nome</th>
+      <th>Dia da Semana</th>
+      <th>Horário</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of list; index as i">
+      <td>
+        <a [routerLink]="['/aulas', i]">{{ item.codigo }}</a>
+      </td>
+      <td>
+        <a [routerLink]="['/aulas', i]">{{ item.nome }}</a>
+      </td>
+      <td>
+        <a [routerLink]="['/aulas', i]">{{ item.nome }}</a>
+      </td>
+      <td>
+        <a [routerLink]="['/aulas', i]">{{ item.nome }}</a>
+      </td>
+    </tr>
+  </tbody>
 </table>

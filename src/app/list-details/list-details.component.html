@@ -1,6 +1,18 @@
+<a routerLink="/aulas" class="btn btn-primary mb-4">Voltar</a>
+
 <h2>Aula</h2>
-<a routerLink="/aulas">Voltar</a>
-<h3>ID</h3>
-<div>{{ item.id }}</div>
-<h3>Text</h3>
-<div>{{ item.text }}</div>
+<div class="card mt-2">
+  <div class="card-body">
+    <h5 class="card-title mb-2">{{ item.codigo }} - {{ item.nome }}</h5>
+    <span class="mb-2 text-muted">Dia semanna / Horário:</span>
+    <p class="card-text">{{ item.diaSemana }} - {{ item.horario }}</p>
+    <span class="mb-2 text-muted">Ementa:</span>
+    <p class="card-text">
+      {{ item.ementa }}
+    </p>
+    <span class="mb-2 text-muted">Objetivos:</span>
+    <p class="card-text">
+      {{ item.objetivo }}
+    </p>
+  </div>
+</div>
